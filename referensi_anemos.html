@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Anemos Meteorologi</title>
+    <style>
+        .isian{
+            width:80%;
+            margin:auto;
+        }
+        body {
+            background-color: rgb(159, 210, 237);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .anemos {
+             font-family:Libre Baskerville;
+            text-align: center;
+            font-size: 70px;
+            color: #112288;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Container tombol (ul) */
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* supaya responsif di layar kecil */
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Setiap tombol (li) */
+        li {
+            list-style-type: none;
+            background-color: white;
+            border: 2px solid #112288;
+            border-radius: 15px;
+            width: 250px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Teks link */
+        li a {
+            text-decoration: none;
+            color: #112288;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Efek saat hover */
+        li:hover {
+            background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        li:hover a {
+            color: white;
+        }
+        
+        li.berubah{
+            background-color: #cddfff;
+        }
+        li.berubah:hover{
+             background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+       
+        div.gambar{
+            width:30%;
+        }
+        .isian{
+            width:70%;
+            margin:auto;
+        }
+        .gambar img{
+            width:300px;
+            margin:auto;
+        }
+        .baris_isi{
+            display:flex;    
+        }
+        .isi{
+            display:flex;
+        }
+        img{
+            border-radius: 20px;
+        }
+          .akhir{
+            height: 50px;
+        }
+        .akhirbanget{
+            height:100px;
+            background-color:   rgb(66, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="anemos">PrakiraKu</p>
+
+    <ul>
+        <li><a href="website_anemos.html">PREDIKSI</a></li>
+        <li><a href="infomete.html">Informasi Parameter Meteorologi</a></li>
+        <li class="berubah"><a href="referensi_anemos.html">Referensi</a></li>
+        <li><a href="https://www.instagram.com/anemos_meteorologi/" target="_blank">Instagram Anemos</a></li>
+    </ul>
+    
+        <div class="isian">
+            <h3><a href="https://www.windy.com/-6.935/107.606/gfs?gfs,rh,-7.307,107.606,9,m:dtBai8v" target="_blank">WINDY GFS</a></h3>
+            <div class="isi">    
+                <div class="baris_isi">
+                    <p> yang kedua mengeluarkan kete, menjaga netralitas, indepedensi, menjamin seluruh anggaran pemilu untuk menyampaikan aspirasi serta menjaga kerahasiaan data, bagian kedua merupakan bacakahim dan bacasen, syaratnya yaitu warga indonesia, anggota biasa hmme, menyerahkan uang jaminan sejumlah atur atur</p>
+                </div>
+                <div class="gambar">
+                    <img src="gambar_referensi/gfs.png">
+                </div>
+            </div>
+        </div>
+         <div class="isian">
+            <h3><a href="https://www.windy.com/-6.681/107.435?rh,-7.025,107.818,9,m:dtBai8v" target="_blank">WINDY ECMWF</a></h3>
+            <div class="isi">    
+                <div class="baris_isi">
+                    <p> yang kedua mengeluarkan kete, menjaga netralitas, indepedensi, menjamin seluruh anggaran pemilu untuk menyampaikan aspirasi serta menjaga kerahasiaan data, bagian kedua merupakan bacakahim dan bacasen, syaratnya yaitu warga indonesia, anggota biasa hmme, menyerahkan uang jaminan sejumlah atur atur</p>
+                </div>
+                <div class="gambar">
+                    <img src="gambar_referensi/icon.png">
+                </div>
+            </div>
+        </div>
+         <div class="isian">
+            <h3><a href="https://www.windy.com/-6.681/107.435/icon?icon,rh,-7.025,107.818,9,m:dtBai8v" target="_blank">WINDY ICON</a></h3>
+            <div class="isi">    
+                <div class="baris_isi">
+                    <p> yang kedua mengeluarkan kete, menjaga netralitas, indepedensi, menjamin seluruh anggaran pemilu untuk menyampaikan aspirasi serta menjaga kerahasiaan data, bagian kedua merupakan bacakahim dan bacasen, syaratnya yaitu warga indonesia, anggota biasa hmme, menyerahkan uang jaminan sejumlah atur atur</p>
+                </div>
+                <div class="gambar">
+                    <img src="gambar_referensi/gfs.png">
+                </div>
+            </div>
+        </div>
+         <div class="isian">
+            <h3><a href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca/32.73.02.1004" target="_blank">BMKG</a></h3>
+            <div class="isi">    
+                <div class="baris_isi">
+                    <p> yang kedua mengeluarkan kete, menjaga netralitas, indepedensi, menjamin seluruh anggaran pemilu untuk menyampaikan aspirasi serta menjaga kerahasiaan data, bagian kedua merupakan bacakahim dan bacasen, syaratnya yaitu warga indonesia, anggota biasa hmme, menyerahkan uang jaminan sejumlah atur atur</p>
+                </div>
+                <div class="gambar">
+                    <img src="gambar_referensi/gfs.png">
+                </div>
+            </div>
+        </div>
+         <div class="isian">
+            <h3><a href="http://nimbus.meteo.itb.ac.id/weather/slidemod.html?type=wrf&domain=jawa&cycle=12" target="_blank">WCPL ITB</a></h3>
+            <div class="isi">    
+                <div class="baris_isi">
+                    <p> yang kedua mengeluarkan kete, menjaga netralitas, indepedensi, menjamin seluruh anggaran pemilu untuk menyampaikan aspirasi serta menjaga kerahasiaan data, bagian kedua merupakan bacakahim dan bacasen, syaratnya yaitu warga indonesia, anggota biasa hmme, menyerahkan uang jaminan sejumlah atur atur</p>
+                </div>
+                <div class="gambar">
+                    <img src="gambar_referensi/gfs.png">
+                </div>
+            </div>
+        </div>
+         <footer>
+        <div class="akhir">
+
+        </div>
+        <div class="akhirbanget">
+
+        </div>
+    </footer>
+         
+    
+</body>
+</html>
