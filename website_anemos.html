@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Anemos Meteorologi</title>
+    <style>
+        body {
+            background-color: rgb(159, 210, 237);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .anemos {
+            font-family:Libre Baskerville;
+            text-align: center;
+            font-size: 70px;
+            color: #112288;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Container tombol */
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            background-color: white;
+            border: 2px solid #112288;
+            border-radius: 15px;
+            width: 250px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        li a {
+            text-decoration: none;
+            color: #112288;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        li:hover a {
+            color: white;
+        }
+
+        .judul_prediksi {
+            font-size: 25px;
+            color: #112288;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        /* Agar gambar peta di tengah */
+        .peta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .peta img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tabel bergaya */
+        .judul_tabel {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #112288;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 70%;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            border: 1px solid #112288;
+            padding: 12px 16px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #112288;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e6f0ff;
+        }
+
+        tr:hover {
+            background-color: #cddfff;
+            transition: 0.3s;
+        }
+        .date{
+            margin-left:10px;
+            margin-bottom:10px;
+        }
+        li.berubah{
+            background-color: #cddfff;
+        }
+        li.berubah:hover{
+             background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+   
+        .arahan-tanggal{
+            display:inline-block;
+            font-family:roboto;
+            font-weight: 600;
+        }
+        .ket-tanggal{
+            display:flex;
+            justify-content: center;
+
+        }
+        .isi-tanggal{
+            width:70%;
+        }
+        .akhir{
+            height: 50px;
+        }
+        .akhirbanget{
+            height:100px;
+            background-color:   rgb(66, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="anemos">ANEMOS</p>
+
+    <ul>
+        <li class="berubah"><a href="website_anemos.html">PREDIKSI</a></li>
+        <li><a href="infomete.html">Informasi Parameter Meteorologi</a></li>
+        <li><a href="referensi_anemos.html">Referensi</a></li>
+        <li><a href="https://www.instagram.com/anemos_meteorologi/" target="_blank">Instagram Anemos</a></li>
+    </ul>
+
+    <p class="judul_prediksi">PREDIKSI CUACA PULAU JAWA</p>
+
+    <div class="peta">
+        <img src="Screenshot 2025-11-02 143242.png" alt="Peta Cuaca Pulau Jawa">
+    </div>
+
+    <p class="judul_tabel">TABEL PREDIKSI</p>
+    <div class="ket-tanggal">
+        <div class="isi-tanggal">
+            <p class="arahan-tanggal">tanggal:</p>
+            <input type="date" class="date">           
+        </div>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>Waktu</th>
+            <th>Curah Hujan</th>
+            <th>Suhu</th>
+            <th>Relative Humidity</th>
+        </tr>
+        <tr>
+            <td>10.00</td>
+            <td>5 mm</td>
+            <td>25°C</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>13.00</td>
+            <td>8 mm</td>
+            <td>28°C</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>16.00</td>
+            <td>12 mm</td>
+            <td>26°C</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>19.00</td>
+            <td>3 mm</td>
+            <td>24°C</td>
+            <td>90%</td>
+        </tr>
+    </table>
+    <footer>
+        <div class="akhir">
+
+        </div>
+        <div class="akhirbanget">
+
+        </div>
+    </footer>
+</body>
+</html>

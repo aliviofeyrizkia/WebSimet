@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anemos Meteorologi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        .isian{
+            width:80%;
+            margin:auto;
+        }
+        body {
+            background-color: rgb(159, 210, 237);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .anemos {
+             font-family:Libre Baskerville;
+            text-align: center;
+            font-size: 70px;
+            color: #0f228b;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        /* Container tombol (ul) */
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* supaya responsif di layar kecil */
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Setiap tombol (li) */
+        li {
+            list-style-type: none;
+            background-color: white;
+            border: 2px solid #112288;
+            border-radius: 15px;
+            width: 250px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Teks link */
+        li a {
+            text-decoration: none;
+            color: #112288;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Efek saat hover */
+        li:hover {
+            background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        li:hover a {
+            color: white;
+        }
+         
+        li.berubah{
+            background-color: #cddfff;
+        }
+        li.berubah:hover{
+             background-color: #112288;
+            transform: translateY(-6px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+          .akhir{
+            height: 50px;
+        }
+        .akhirbanget{
+            height:100px;
+            background-color:   rgb(66, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="anemos">ANEMOS</p>
+
+    <ul>
+        <li><a href="website_anemos.html">PREDIKSI</a></li>
+        <li class="berubah"><a href="infomete.html" >Informasi Parameter Meteorologi</a></li>
+        <li><a href="referensi_anemos.html">Referensi</a></li>
+        <li><a href="https://www.instagram.com/anemos_meteorologi/" target="_blank">Instagram Anemos</a></li>
+    </ul>
+    <div class="isian">
+        <h3>Curah Hujan</h3>
+        
+        <p>
+            Curah hujan merupakan jumlah presipitasi berupa air yang jatuh ke permukaan bumi dalam jangka waktu tertentu, biasanya diukur dalam milimeter (mm) per hari atau per jam. Intensitas curah hujan di Indonesia dibagi menjadi empat kategori utama. Hujan ringan memiliki intensitas 1–5 mm/jam atau 5–20 mm/hari, biasanya hanya berupa gerimis atau hujan singkat tanpa dampak signifikan terhadap aktivitas harian. Hujan sedang berkisar antara 5–10 mm/jam atau 20–50 mm/hari, yang dapat menyebabkan genangan di daerah dengan sistem drainase buruk. Hujan lebat mencapai 10–20 mm/jam atau 50–100 mm/hari, dan berpotensi menimbulkan banjir lokal serta longsor di wilayah rawan. Sementara itu, hujan sangat lebat memiliki intensitas lebih dari 20 mm/jam atau melebihi 100 mm/hari; pada kategori ini, dampak yang ditimbulkan dapat meluas, termasuk banjir besar, peningkatan debit sungai secara tiba-tiba, hingga rusaknya infrastruktur jalan dan jembatan.
+        </p>
+        <p>
+            Dalam konteks mitigasi, semakin tinggi intensitas hujan maka semakin besar pula risiko bencana hidrometeorologi. Oleh karena itu, saat prakiraan menunjukkan potensi hujan lebat hingga sangat lebat, masyarakat di wilayah dataran rendah atau sekitar aliran sungai perlu meningkatkan kewaspadaan, memperhatikan kondisi saluran air, serta mengikuti arahan dari lembaga resmi. Aktivitas luar ruangan sebaiknya dikurangi, terutama pada sore hingga malam hari saat puncak hujan konvektif sering terjadi. 
+    
+        </p>
+        
+        <h3>Relative humidity</h3>
+            <p>
+                Kelembapan relatif atau relative humidity (RH) merupakan besaran yang menunjukkan persentase uap air yang terkandung di udara dibandingkan dengan jumlah maksimum yang dapat ditampung udara pada suhu tertentu. RH sangat berpengaruh terhadap kenyamanan manusia, potensi pembentukan awan, serta intensitas curah hujan. Berdasarkan pedoman WMO (2008) dan beberapa kajian iklim tropis di Indonesia (Sugiyono et al., 2019; WHO, 2018), kelembapan dapat diklasifikasikan menjadi empat kategori, yaitu sangat kering (<40%), sedang atau moderat (40–60%), lembap (60–80%), dan sangat lembap atau jenuh (>80%). Pada kondisi sangat kering, udara terasa panas dan cepat menyebabkan dehidrasi karena proses evaporasi meningkat; kondisi ini sering muncul pada musim kemarau panjang di wilayah pesisir selatan Jawa atau Nusa Tenggara. Saat kelembapan sedang, udara terasa nyaman dan stabil untuk aktivitas manusia, sedangkan kondisi lembap menandakan meningkatnya potensi pembentukan awan konvektif dan hujan lokal. Sementara itu, kondisi sangat lembap atau jenuh biasanya terjadi menjelang hujan, di mana udara mengandung banyak uap air sehingga mudah terbentuk kabut dan jarak pandang menurun. Mitigasi yang disarankan pada RH rendah adalah memperbanyak asupan cairan dan menghindari aktivitas berat di luar ruangan, sedangkan pada RH sangat tinggi perlu memperhatikan ventilasi ruang dan mengurangi aktivitas di luar rumah karena risiko gangguan pernapasan dan infeksi jamur meningkat.
+            </p>
+        <h3>Temperatur</h3>
+            <p>
+                Temperature Suhu udara menggambarkan tingkat panas atau dingin suatu tempat dan merupakan indikator utama dalam analisis cuaca dan iklim. Menurut BMKG (2022) dan WMO (2019), suhu udara di wilayah Indonesia umumnya berkisar antara 20–32°C, dengan variasi yang bergantung pada ketinggian, waktu, dan kondisi cuaca. Secara umum, suhu dapat diklasifikasikan menjadi lima kategori, yaitu dingin (<20°C), normal (20–26°C), hangat (26–30°C), panas (30–35°C), dan sangat panas atau ekstrem (>35°C). Kondisi dingin biasanya terjadi di daerah pegunungan atau pada malam hari dengan radiasi tinggi, yang dapat menyebabkan tubuh kehilangan panas lebih cepat, atau risiko hipotermia. Mitigasinya adalah mengenakan pakaian hangat dan membatasi paparan udara luar dini hari. Suhu normal berada pada kisaran ideal bagi aktivitas manusia tanpa memerlukan penyesuaian khusus, sedangkan kondisi hangat membuat tubuh mulai berkeringat untuk menstabilkan suhu. Pada kategori panas, risiko dehidrasi dan kelelahan meningkat, terutama bila kelembapan juga tinggi, sehingga perlu memperbanyak minum air dan menghindari paparan langsung sinar matahari. Kondisi sangat panas atau ekstrem juga memerlukan perhatian khusus karena berpotensi menimbulkan gangguan kesehatan serius seperti heat exhaustion dan heatstroke.
+            </p>
+    </div>
+     <footer>
+        <div class="akhir">
+
+        </div>
+        <div class="akhirbanget">
+
+        </div>
+    </footer>
+
+</body>
+</html>
